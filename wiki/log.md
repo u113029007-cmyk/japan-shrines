@@ -44,3 +44,12 @@
 ## [2026-11-16] publish | 全站重新產生（加入圖片、收錄的神社改為醒目區塊）
 - AGENTS.md 新增第 8.2 節「收錄的神社要醒目」、第 10.1 節介紹用圖片、第 10.2 節裝飾用圖片
 - 照片 4 張、插圖新增 7 張登記於 images/CREDITS.md（插圖共 9／20）；照片作者與授權待補
+
+## [2026-11-16] setup | 推送到 GitHub：u113029007-cmyk/japan-shrines（main 分支）
+- 新增 README.md（給人看的說明）、.nojekyll（讓 GitHub Pages 原樣發佈）
+- 修正 AGENTS.md 第 9 節表格斷行與分隔裝飾寫法（排版修正，規則內容未變）
+
+## [2026-11-16] publish | 照片出處更新
+- hachiman-01.jpg：使用者提供 Commons 頁面「File:Sōgyō Hachiman.jpg」，作者不詳、公有領域
+- tenjin-01.jpg：作者 Immanuelle（使用者截圖），授權待補
+- inari-01.jpg、usa-jingu-01.jpg 找不到下載來源，先從網頁拿掉，檔案保留

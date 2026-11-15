@@ -344,3 +344,7 @@ section.sources ol { padding-left: 24px; }
 .site-footer p { margin: 4px 0; }
 .site-footer a { color: var(--c-bg); }
 .site-footer a:hover { color: var(--c-hachiman); }
+
+/* 首頁卡片沒有照片時，神使插圖改放在右上角 */
+.deity-card.no-cover { padding-right: 96px; }
+.deity-card.no-cover .messenger { top: 14px; }

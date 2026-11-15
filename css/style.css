@@ -1,0 +1,346 @@
+/* 日本神社導覽：從神找神社
+   全站唯一的樣式檔。顏色只在 :root 定義，頁面只用變數（AGENTS.md 第 9 節）。 */
+
+:root {
+  --c-bg: #F5F0E6;        /* 和紙米白 */
+  --c-card: #FFFDF8;
+  --c-text: #2B2B2B;      /* 墨色 */
+  --c-vermilion: #D9472B; /* 鳥居朱 */
+  --c-pine: #2F5D50;      /* 松葉綠 */
+  --c-muted: #7A7266;
+  --c-line: #D8CFBF;
+  --c-pine-dark: #1F3F36;   /* 深松綠：頁首、頁尾 */
+  /* 神祇主題色（AGENTS.md 第 9.1 節） */
+  --c-hachiman: #B8913A;    /* 金 */
+  --c-inari: #D9472B;       /* 朱 */
+  --c-tenjin: #8F4B6B;      /* 梅紫 */
+  --c-accent: var(--c-vermilion);
+  --font: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+/* 主題：body 加上 class 後，--c-accent 換成該神祇的顏色 */
+.theme-hachiman { --c-accent: var(--c-hachiman); }
+.theme-inari    { --c-accent: var(--c-inari); }
+.theme-tenjin   { --c-accent: var(--c-tenjin); }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+a { color: var(--c-pine); }
+a:hover { color: var(--c-accent); }
+
+/* ---------- 頁首：深松綠底＋青海波紋樣（AGENTS.md 第 9.2 節） ---------- */
+.site-header {
+  background-color: var(--c-pine-dark);
+  background-image:
+    radial-gradient(circle at 50% 100%,
+      transparent 10px, rgba(245, 240, 230, 0.18) 10px, rgba(245, 240, 230, 0.18) 12px,
+      transparent 12px, transparent 16px, rgba(245, 240, 230, 0.18) 16px, rgba(245, 240, 230, 0.18) 18px,
+      transparent 18px);
+  background-size: 40px 20px;
+  border-bottom: 4px solid var(--c-accent);
+}
+.site-header .inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.deco-torii { width: 44px; height: auto; }
+.site-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--c-card);
+  background: var(--c-pine-dark);
+  padding: 4px 10px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+.site-title:hover { color: var(--c-bg); text-decoration: underline; }
+
+/* ---------- 主內容 ---------- */
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: var(--c-muted);
+  margin-bottom: 8px;
+}
+.breadcrumb a { color: var(--c-muted); }
+.breadcrumb a:hover { color: var(--c-accent); }
+
+h1 {
+  font-size: 30px;
+  margin: 8px 0 4px;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin-top: 10px;
+  background: var(--c-accent);
+}
+h1 .ja {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--c-muted);
+  margin-left: 8px;
+}
+
+.lead {
+  font-size: 18px;
+  color: var(--c-pine);
+  margin: 16px 0 24px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 36px 0 12px;
+  padding-left: 12px;
+  border-left: 4px solid var(--c-accent);
+}
+h3 {
+  font-size: 18px;
+  margin: 24px 0 8px;
+  color: var(--c-pine);
+}
+
+p { margin: 0 0 12px; }
+
+sup.ref { font-size: 11px; }
+sup.ref a { text-decoration: none; color: var(--c-muted); }
+sup.ref a:hover { color: var(--c-accent); }
+
+/* ---------- 介紹用圖片（要有圖說與出處，AGENTS.md 第 10.1 節） ---------- */
+figure.photo {
+  margin: 0 0 24px;
+  background: var(--c-card);
+  border: 1px solid var(--c-line);
+  padding: 10px;
+}
+figure.photo img {
+  display: block;
+  width: 100%;
+  max-height: 440px;
+  object-fit: contain;
+  background: var(--c-bg);
+}
+figure.photo figcaption,
+figure.illust figcaption { font-size: 14px; color: var(--c-text); margin-top: 6px; }
+.credit { display: block; font-size: 12px; color: var(--c-muted); }
+
+/* ---------- 裝飾用插圖（不需圖說，AGENTS.md 第 10.2 節） ---------- */
+.deco { pointer-events: none; }
+.deco-float {
+  float: right;
+  width: 120px;
+  margin: 0 0 12px 20px;
+}
+.intro-wrap::after { content: ""; display: block; clear: both; }
+
+/* ---------- 跳到「收錄的神社」的按鈕 ---------- */
+.jump-link {
+  display: inline-block;
+  background: var(--c-accent);
+  color: var(--c-card);
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+.jump-link:hover { color: var(--c-card); filter: brightness(1.1); }
+
+/* ---------- 收錄的神社：醒目的區塊 ---------- */
+.shrines-band {
+  position: relative;
+  clear: both;
+  margin: 44px 0 16px;
+  padding: 8px 28px 28px;
+  background: color-mix(in srgb, var(--c-accent) 10%, var(--c-card));
+  border: 2px solid var(--c-accent);
+}
+.shrines-band .deco-shimenawa {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  mix-blend-mode: multiply; /* 插圖是白底 jpg，讓白底融入區塊底色 */
+}
+.shrines-band h2 {
+  border-left: none;
+  padding-left: 0;
+  text-align: center;
+  font-size: 26px;
+  margin: 4px 0 4px;
+}
+.shrines-band .band-note {
+  text-align: center;
+  color: var(--c-muted);
+  margin-bottom: 16px;
+}
+.shrines-band .deco-toro {
+  position: absolute;
+  top: 24px;
+  width: 64px;
+}
+.shrines-band .deco-toro.left { left: 16px; }
+.shrines-band .deco-toro.right { right: 16px; }
+.shrines-band .shrine-card { border-left-width: 6px; }
+@media (max-width: 600px) {
+  .shrines-band .deco-toro { display: none; }
+  .deco-float { width: 90px; }
+}
+
+/* ---------- 分隔裝飾 ---------- */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0;
+}
+.divider::before, .divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--c-line);
+}
+.divider span {
+  width: 8px;
+  height: 8px;
+  background: var(--c-accent);
+  transform: rotate(45deg);
+}
+
+/* ---------- 表格 ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--c-card);
+  margin: 12px 0 16px;
+  font-size: 15px;
+}
+th, td {
+  border: 1px solid var(--c-line);
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--c-bg); }
+
+/* ---------- 首頁：神祇卡片（上方色帶為神祇主題色） ---------- */
+.intro { margin-bottom: 24px; }
+.deity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.deity-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: var(--c-card);
+  border: 1px solid var(--c-line);
+  border-top: 10px solid var(--c-accent);
+  padding: 18px 20px;
+  text-decoration: none;
+  color: var(--c-text);
+  transition: transform 0.15s;
+}
+.deity-card .cover {
+  display: block;
+  width: calc(100% + 40px);
+  height: 180px;
+  margin: -18px -20px 14px;
+  object-fit: cover;
+}
+.deity-card .messenger {
+  position: absolute;
+  right: 10px;
+  top: 130px;
+  width: 72px;
+}
+.deity-card .credit { margin-top: 8px; }
+.deity-card:hover { transform: translateY(-3px); color: var(--c-text); }
+.deity-card .name { font-size: 22px; font-weight: 700; margin: 0; }
+.deity-card .one-line { margin: 8px 0; }
+.deity-card .count { font-size: 14px; color: var(--c-accent); font-weight: 700; margin: 0; }
+
+/* ---------- 神祇頁：地區區塊與神社卡片 ---------- */
+section.region h3 {
+  color: var(--c-accent);
+  border-bottom: 1px solid var(--c-line);
+  padding-bottom: 4px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.shrine-card {
+  background: var(--c-card);
+  border: 1px solid var(--c-line);
+  border-left: 5px solid var(--c-accent);
+  padding: 14px 16px;
+}
+.shrine-card .name { font-size: 18px; font-weight: 700; margin: 0; }
+.shrine-card .ja { font-size: 14px; color: var(--c-muted); margin: 0; }
+.shrine-card .pref { font-size: 14px; color: var(--c-pine); margin: 4px 0; }
+.shrine-card .more { font-size: 14px; }
+.empty { color: var(--c-muted); }
+
+/* ---------- 插圖 ---------- */
+.illust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 8px 0 16px;
+}
+figure.illust {
+  margin: 0;
+  width: 150px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--c-muted);
+}
+figure.illust img { width: 100%; height: auto; }
+figure.illust.side { float: right; margin: 0 0 12px 20px; }
+
+/* ---------- 來源 ---------- */
+section.sources {
+  margin-top: 40px;
+  font-size: 14px;
+  color: var(--c-muted);
+}
+section.sources h2 { font-size: 18px; }
+section.sources ol { padding-left: 24px; }
+
+/* ---------- 頁尾：深松綠底、米白字 ---------- */
+.site-footer {
+  background: var(--c-pine-dark);
+  color: var(--c-bg);
+  font-size: 14px;
+  border-top: 4px solid var(--c-accent);
+}
+.site-footer .inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 20px 20px 28px;
+}
+.site-footer p { margin: 4px 0; }
+.site-footer a { color: var(--c-bg); }
+.site-footer a:hover { color: var(--c-hachiman); }

@@ -53,3 +53,19 @@
 - hachiman-01.jpg：使用者提供 Commons 頁面「File:Sōgyō Hachiman.jpg」，作者不詳、公有領域
 - tenjin-01.jpg：作者 Immanuelle（使用者截圖），授權待補
 - inari-01.jpg、usa-jingu-01.jpg 找不到下載來源，先從網頁拿掉，檔案保留
+
+## [2026-11-16] ingest | raw/inari/wikipedia-zh-fushimi-inari-taisha.md
+- 新增 wiki/shrines/fushimi-inari-taisha.md（draft）：基本資料、由來與歷史、祭神與信仰、境內看點、參拜小提醒、來源
+- 更新 wiki/deities/inari.md（改為 draft）：「收錄的神社」加入伏見稻荷大社
+- 更新 wiki/index.md：新增神社一行；inari 狀態改為 draft
+- 待補資料：無；來源僅一份（中文維基百科），官網中文版尚未收錄
+
+## [2026-11-16] publish | shrines/fushimi-inari-taisha.html
+- wiki/shrines/fushimi-inari-taisha.md、wiki/deities/inari.md 改為 confirmed（使用者確認後）
+- 新增 shrines/fushimi-inari-taisha.html；deities/inari.html 加入「近畿」區塊卡片，收錄數改為 1；首頁稻荷神收錄數改為 1
+- 新增照片 images/fushimi-inari-taisha-01.jpg（作者 Jakub Hałun，CC BY 4.0），登記於 CREDITS.md；Commons 頁面連結待補
+
+## [2026-11-16] publish | 伏見稻荷大社照片、稻荷神照片
+- 伏見稻荷大社頁照片的 Commons 連結補上（作者 Jakub Hałun，CC BY 4.0）
+- 稻荷神頁與首頁卡片加上照片 images/inari-01.jpg（作者 Hyppolyte de Saint-Rambert，CC BY-SA 4.0）；Commons 頁面連結待補
+- 原 images/inari-01.jpg（無來源、未使用）由新照片取代

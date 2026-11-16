@@ -11,6 +11,7 @@
 ## 神社
 
 - [[usa-jingu]] 宇佐神宮：全國八幡宮的總本宮，參拜時要拍手四次（confirmed，來源 6 份）
+- [[fushimi-inari-taisha]] 伏見稻荷大社：稻荷神的總本社，以綿延稻荷山的千本鳥居聞名（confirmed，來源 1 份）
 
 ## 概念
 

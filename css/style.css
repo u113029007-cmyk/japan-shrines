@@ -389,3 +389,17 @@ section.sources ol { padding-left: 24px; }
   th:first-child, td:first-child { white-space: nowrap; }
   h1 { font-size: 26px; }
 }
+
+/* 插圖排排站：每張圖同樣高度、同樣間距，圖說對齊在同一條線 */
+.illust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+.illust-row figure.illust { width: 140px; }
+.illust-row figure.illust img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}

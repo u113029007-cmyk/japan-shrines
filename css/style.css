@@ -371,3 +371,21 @@ section.sources ol { padding-left: 24px; }
 .shrine-card.coming-soon { border-left: 2px dashed var(--c-line); background: transparent; }
 .coming-row { margin-top: 14px; }
 .coming-soon p { margin: 0; }
+
+/* 首頁「關於這個網站」（AGENTS.md 第 8.1 節） */
+.about {
+  background: var(--c-card);
+  border: 1px solid var(--c-line);
+  padding: 8px 24px 16px;
+}
+.about h2 { margin-top: 16px; }
+.about code { background: var(--c-bg); padding: 1px 6px; font-size: 14px; }
+.about-links { padding-left: 20px; }
+
+/* 手機版表格：第一欄不換行，避免一個字一行 */
+@media (max-width: 600px) {
+  table { font-size: 14px; }
+  th, td { padding: 6px 8px; }
+  th:first-child, td:first-child { white-space: nowrap; }
+  h1 { font-size: 26px; }
+}

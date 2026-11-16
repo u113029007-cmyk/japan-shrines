@@ -205,6 +205,7 @@ updated: YYYY-MM-DD
 1. 網站簡介（2～3 句）。
 2. 三張神祇卡片，順序：八幡神、稻荷神、天神。每張卡片：代表意象照片、神使插圖、神祇名稱、一句話介紹、「已收錄 N 間神社」，整張連到神祇頁。卡片上方有該神祇主題色的色帶（第 9.1 節）。
 3. 神祇卡片之後，固定放一個預留欄位 `<div class="deity-card coming-soon">`，文字「更多神祇　持續更新中…」（虛線框）。新增神祇時，新卡片放在預留欄位**前面**，預留欄位永遠是最後一個。
+4. 最後放「關於這個網站」區塊 `<section class="about">`：用兩三句話說明 LLM Wiki 三層（raw → wiki → 網頁）與新增內容的方式，並列出 AGENTS.md、DECISIONS.md、raw/、wiki/、GitHub repository 的連結。新增內容時不需要改這一區，除非架構改變。
 
 ### 8.2 神祇頁 `deities/<slug>.html`
 

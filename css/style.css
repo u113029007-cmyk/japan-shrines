@@ -348,3 +348,26 @@ section.sources ol { padding-left: 24px; }
 /* 首頁卡片沒有照片時，神使插圖改放在右上角 */
 .deity-card.no-cover { padding-right: 96px; }
 .deity-card.no-cover .messenger { top: 14px; }
+
+/* 稻荷神卡片的狐狸照片是直的，裁切時保留上半部（狐狸頭） */
+.deity-card.theme-inari .cover { object-position: center 12%; }
+
+/* 「持續更新中…」的預留欄位（AGENTS.md 第 8.1、8.2 節） */
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 160px;
+  background: transparent;
+  border: 2px dashed var(--c-line);
+  color: var(--c-muted);
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+}
+.deity-card.coming-soon { border-top: 2px dashed var(--c-line); min-height: 300px; }
+.deity-card.coming-soon:hover { transform: none; }
+.shrine-card.coming-soon { border-left: 2px dashed var(--c-line); background: transparent; }
+.coming-row { margin-top: 14px; }
+.coming-soon p { margin: 0; }

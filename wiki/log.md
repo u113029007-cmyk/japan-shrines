@@ -82,3 +82,7 @@
 - inari-01.jpg 補上 Commons 頁面：File:Fushimi_Inari-taisha_gerbe_de_céréales.jpg（Hyppolyte de Saint-Rambert，CC BY-SA 4.0）
 - 新增插圖 images/illust/ox.png（いらすとや），用在首頁天神卡片、天神頁神使段落、神使頁；插圖共 10／20
 - 全站照片出處已無「待補」
+
+## [2026-11-16] publish | 版面微調
+- 首頁稻荷神卡片的狐狸照片改為保留上半部
+- 首頁神祇卡片、神祇頁「收錄的神社」區塊加上「持續更新中…」預留欄位（AGENTS.md 第 8.1、8.2 節）

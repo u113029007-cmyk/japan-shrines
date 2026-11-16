@@ -77,3 +77,8 @@
 ## [2026-11-16] publish | 全站重新產生（照片出處補齊）
 - 照片出處補齊：tenjin-01.jpg、usa-jingu-01.jpg（Immanuelle，CC BY 4.0）、hachiman-02.jpg（Aruitaro，CC BY-SA 4.0）；inari-01.jpg 的 Commons 網址待補
 - 「dazaifu Tenmangu ox.jpg」改回 tenjin-01.jpg；usa-jingu-01.jpg 放回宇佐神宮頁；hachiman-02.jpg 放在八幡神頁神使段落
+
+## [2026-11-16] publish | 補齊稻荷神照片出處、加入牛的插圖
+- inari-01.jpg 補上 Commons 頁面：File:Fushimi_Inari-taisha_gerbe_de_céréales.jpg（Hyppolyte de Saint-Rambert，CC BY-SA 4.0）
+- 新增插圖 images/illust/ox.png（いらすとや），用在首頁天神卡片、天神頁神使段落、神使頁；插圖共 10／20
+- 全站照片出處已無「待補」

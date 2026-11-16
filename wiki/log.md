@@ -69,3 +69,11 @@
 - 伏見稻荷大社頁照片的 Commons 連結補上（作者 Jakub Hałun，CC BY 4.0）
 - 稻荷神頁與首頁卡片加上照片 images/inari-01.jpg（作者 Hyppolyte de Saint-Rambert，CC BY-SA 4.0）；Commons 頁面連結待補
 - 原 images/inari-01.jpg（無來源、未使用）由新照片取代
+
+## [2026-11-16] lint | 檢查新對話測試的結果
+- 比對 commit 116f902 與 b44a0ca：測試 AI 新增伏見稻荷大社（wiki、網頁、照片），更新稻荷神頁、首頁、index、log、CREDITS；未動 raw 與其他頁面
+- 發現 3 個規則漏洞，經使用者同意補進 AGENTS.md 第 10、15、17 節
+
+## [2026-11-16] publish | 全站重新產生（照片出處補齊）
+- 照片出處補齊：tenjin-01.jpg、usa-jingu-01.jpg（Immanuelle，CC BY 4.0）、hachiman-02.jpg（Aruitaro，CC BY-SA 4.0）；inari-01.jpg 的 Commons 網址待補
+- 「dazaifu Tenmangu ox.jpg」改回 tenjin-01.jpg；usa-jingu-01.jpg 放回宇佐神宮頁；hachiman-02.jpg 放在八幡神頁神使段落

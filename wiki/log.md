@@ -94,3 +94,14 @@
 ## [2026-11-16] publish | 插圖排列對齊；DECISIONS.md 補完
 - 神使頁、參拜方式頁的插圖改為同樣高度、同樣間距，圖說對齊（只改 css/style.css）
 - DECISIONS.md 中「待測試」「待討論」的項目，依測試結果與後續決定補完
+
+## [2026-11-16] lint | 新對話健檢，發現 4 個問題
+- 測試 AI 只讀 AGENTS.md 做健檢，列出問題，未修改任何檔案
+- 問題：AGENTS.md 提到已不存在的 raw/_unused/；log 用了未定義的 setup、fix 類型；DECISIONS.md #1、#5 未更新；第 13.4 節與第 14 節對健檢是否寫 log 互相矛盾
+
+## [2026-11-16] fix | 依健檢結果修正規則文件
+- 使用者已自行刪除 raw/_unused/；AGENTS.md 第 4、6 節刪除相關文字
+- AGENTS.md 第 13.4 節：健檢只可在 log.md 加一筆 lint 紀錄；第 14 節：補上 setup、fix 類型，以及 index.md「待建立（候選）」段落的規則
+- DECISIONS.md：#1 註明已被 #7 取代、#5 更新進度、新增 #27
+- wiki/index.md：新增「待建立（候選）」段落（8 項）
+- raw/usa-jingu 的 mlit 網址（/tagengo-db/en/H30-01300.html）是搜尋結果中的多語版頁面網址，保留不改

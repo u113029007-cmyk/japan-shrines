@@ -17,3 +17,16 @@
 
 - [[shinshi]] 神使：被當成神明使者的動物，例如稻荷的狐狸、天神的牛、八幡的鴿子（confirmed，來源 6 份）
 - [[sanpai]] 參拜方式：先在手水舍淨手，再到拜殿依「二拜二拍手一拜」行禮（confirmed，來源 3 份）
+
+## 待建立（候選）
+
+只給 AI 參考，不放網頁（AGENTS.md 第 14 節）。建好頁面後從這裡刪除。
+
+- 太宰府天滿宮（天神）：相關 raw `raw/tenjin/fukuokainsider-dazaifu.md`
+- 北野天滿宮（天神）：相關 raw `raw/shinshi/quinniesodyssey-ushi.md`
+- 石清水八幡宮（八幡神）：[[hachiman]] 提到
+- 鶴岡八幡宮、筥崎宮（八幡神）：[[hachiman]] 提到
+- 京都三宅八幡宮（八幡神）：相關 raw `raw/shinshi/quinniesodyssey-hato.md`（鴿子）
+- 出雲大社：[[sanpai]] 提到（拍手四次），尚無對應神祇頁
+- 祐德稻荷神社、笠間稻荷神社（稻荷神）：[[inari]] 提到
+- 東丸神社（稻荷神）：[[fushimi-inari-taisha]] 提到

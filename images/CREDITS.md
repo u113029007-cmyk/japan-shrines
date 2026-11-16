@@ -18,3 +18,4 @@
 | fushimi-inari-taisha-01.jpg | 照片 | 伏見稻荷大社頁 | Jakub Hałun | CC BY 4.0 | https://creativecommons.org/licenses/by/4.0/ | https://commons.wikimedia.org/wiki/File:Tamayama_Inarisha,_Fushimi_Inari-taisha,_Kyoto,_20240818_1343_4408.jpg | 是（縮小；原檔 5,640 × 2,896） | 2026-11-16 |
 | hachiman-02.jpg | 照片 | 八幡神（神使段落） | Aruitaro | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0/ | https://commons.wikimedia.org/wiki/File:Miyake_hachimangu_keidai.jpg | 縮小 | 2026-11-16 |
 | illust/ox.png | 插圖 | 首頁、天神、神使 | みふねたかし（いらすとや） | いらすとや利用規約 | https://www.irasutoya.com/p/terms.html | https://www.irasutoya.com/ | 無 | 2026-11-16 |
+| dazaifu-tenmangu-01.jpg | 照片 | 太宰府天滿宮頁 | Mamusi Taka | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0/ | https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE_-_panoramio_(1).jpg | 縮為 1280px 寬（原檔 2,289 × 1,650） | 2026-11-16 |

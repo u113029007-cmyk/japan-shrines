@@ -110,3 +110,35 @@
 - 依測試 AI 原始回覆核對：實際列出 8 個問題（需使用者決定 5 個、文件一致性 3 個），不是 4 個
 - 「第 13.4 節與第 14 節矛盾」不是測試 AI 發現的，是事後核對時發現
 - 未處理、維持現狀：伏見稻荷大社只有 1 份來源；gltjp、mlit 兩份 raw 只有搜尋摘要
+
+## [2026-11-16] ingest | raw/tenjin/fukuokainsider-dazaifu.md
+- 新增 wiki/shrines/dazaifu-tenmangu.md（draft）：基本資料、由來與歷史、祭神與信仰、境內看點、來源
+- 更新 wiki/deities/tenjin.md（改為 draft）：「收錄的神社」加入太宰府天滿宮
+- 更新 wiki/index.md：新增神社一行；tenjin 狀態改為 draft；候選段落移除太宰府天滿宮
+- 待補資料：日文名稱、讀音、詳細地址、創建年代、參拜小提醒（raw 內沒有，未自行補充）
+- 不一致：御本殿 2027 年道真公 1125 年式年大祭，903 年加 1125 年為 2028 年，已在內文標註待查核
+- 僅單一旅遊網站資料：御本殿 1591 年建造與重要文化財、太鼓橋與直橋、飛梅、仮殿、御神籤，已在內文標註
+- 略過：來源中關於 2025 年大阪萬國博覽會設計者的註記（與神社介紹無關）
+
+## [2026-11-16] ingest | raw/tenjin/fun-japan-dazaifu-tenmangu.md
+- 更新 wiki/shrines/dazaifu-tenmangu.md（draft）：日文名稱改為「太宰府天満宮」（來源 3）；所在地補上地址（僅單一旅遊網站資料）；新增參拜小提醒；境內看點補上御神牛像、撫牛；來源增為 3 份
+- 更新 wiki/index.md：太宰府天滿宮來源數改為 3 份
+- 待補資料：讀音、創建年代（raw 內沒有）
+- 不一致：式年大祭年份（兩份來源都寫 2027 年；903 年加 1125 年為 2028 年）；飛梅位置（一說本殿右側，一說御本殿旁）；牛像（來源 1 寫門口一尊，來源 3 寫境內 11 尊），皆保留並標註
+- 注意：raw/tenjin/fun-japan-dazaifu-tenmangu.md 檔頭的 url 填的是中文維基「菅原道真」的網址，不是 FUN!JAPAN 文章的網址；raw 不修改，發布前需要確認正確網址
+- 照片：images/dazaifu tenmangū.jpg 縮為 images/dazaifu-tenmangu-01.jpg（1280px 寬）；原檔保留未刪除；已登記於 CREDITS.md（作者 Mamusi Taka，CC BY-SA 3.0，Commons 頁面）
+
+## [2026-11-16] fix | 太宰府天滿宮頁依使用者指示修正
+- raw/tenjin/fun-japan-dazaifu-tenmangu.md 檔頭 url 已由使用者更新（raw 內容未改）
+- 式年大祭年份依來源寫為 2027 年，內文不再加註不一致說明；注意 903 年加 1125 年為 2028 年，此算術差異保留在本紀錄，待查核
+- 飛梅位置與御神牛像數量維持兩種說法並列
+- 原照片 images/dazaifu tenmangū.jpg 由使用者刪除；CREDITS.md 登記的是縮小後的 images/dazaifu-tenmangu-01.jpg
+- 讀音、創建年代維持「待補資料」
+
+## [2026-11-16] publish | shrines/dazaifu-tenmangu.html、deities/tenjin.html、index.html
+- 使用者確認後：wiki/shrines/dazaifu-tenmangu.md、wiki/deities/tenjin.md 改為 confirmed；wiki/index.md 同步更新
+- 新增 shrines/dazaifu-tenmangu.html（照片 images/dazaifu-tenmangu-01.jpg，作者 Mamusi Taka，CC BY-SA 3.0；圖說依照片可見內容撰寫）
+- deities/tenjin.html 加入「九州・沖繩」區塊卡片，收錄數改為 1；首頁天神收錄數改為 1
+- 來源 raw 檔頭 url 已由使用者更新，網頁來源區採用各 raw 檔的網站名稱與網址
+- 待補資料：讀音、創建年代
+- 仍保留的說法差異：飛梅位置、御神牛像數量；式年大祭年份依來源寫 2027 年（903 年加 1125 年為 2028 年，待查核）

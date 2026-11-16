@@ -12,6 +12,7 @@
 
 - [[usa-jingu]] 宇佐神宮：全國八幡宮的總本宮，參拜時要拍手四次（confirmed，來源 6 份）
 - [[fushimi-inari-taisha]] 伏見稻荷大社：稻荷神的總本社，以綿延稻荷山的千本鳥居聞名（confirmed，來源 1 份）
+- [[dazaifu-tenmangu]] 太宰府天滿宮：祭祀天神菅原道真的神社，道真葬於此地（confirmed，來源 3 份）
 
 ## 概念
 
@@ -22,7 +23,6 @@
 
 只給 AI 參考，不放網頁（AGENTS.md 第 14 節）。建好頁面後從這裡刪除。
 
-- 太宰府天滿宮（天神）：相關 raw `raw/tenjin/fukuokainsider-dazaifu.md`
 - 北野天滿宮（天神）：相關 raw `raw/shinshi/quinniesodyssey-ushi.md`
 - 石清水八幡宮（八幡神）：[[hachiman]] 提到
 - 鶴岡八幡宮、筥崎宮（八幡神）：[[hachiman]] 提到
